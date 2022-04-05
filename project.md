@@ -226,4 +226,7 @@ app.controller('myCtrl', function($scope, $http) {
     ![bookscmd](bookscmd.png)
 
 **MEAN Stack Successfully Deployed!**
+---
 
+**Note**
+- An alternate way of getting IPv4 addresses aside going to check it from the AWS portal can be done by running ` curl -s http://169.254.169.254/latest/meta-data/public-ipv4`. For DNS name, use `curl -s http://169.254.169.254/latest/meta-data/public-hostname`
