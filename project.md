@@ -25,18 +25,18 @@
     - Finally installed MongoDB by running `sudo apt install -y mongodb`
 
 - Started the server & verified the service was running by running `sudo apt install -y mongodb` & `sudo systemctl status mongodb`.
-![mongo](mongo.png)
+![mongo](images/mongo.png)
 
 - Ran `sudo apt install -y npm` to install npm the node package manager.
 
     - Ran into a dependency error when running the above code.
-    ![dependency](dependency.png)
+    ![dependency](images/dependency.png)
 
     - Did research and went with the recommmendation to install npm using aptitude (another package manager). Installed aptitude first by running `sudo apt install aptitude` & installed npm by running `sudo aptitude install npm`.
-    ![aptitude](aptitude.png)
+    ![aptitude](images/aptitude.png)
 
 - Installed the `body-parser` package to help process JSON files passed in requests to the server. This was done by `sudo npm install body-parser`.
-![parser](parser.png)
+![parser](images/parser.png)
 ***Ignore the warnings above as they are misleading and can lead you to think the package wasn't installed***
 
 - Created and initialized npm in the Books folder for the project `mkdir Books && cd Books` & `npm init`.
@@ -217,10 +217,10 @@ app.controller('myCtrl', function($scope, $http) {
 - Changed back to the /Books dir and started the server by running `node server.js`. This is so because npm was initialized in the /Books dir.
 
 - Headed over to the network security group settings on AWS to open the required port for accessing the app over the internet (3300)
-![inboundrules](inboundrules.png)
+![inboundrules](images/inboundrules.png)
 
 - Tried accessing the app via the web browser using the `<localhost>:3300` format and the app was accessible and fully functional. See below.
-![booksweb](booksweb.png)
+![booksweb](images/booksweb.png)
 
     - Also noticed entries reflecting in the backend whenever entries were made.
     ![bookscmd](bookscmd.png)
