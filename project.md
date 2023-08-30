@@ -223,7 +223,7 @@ app.controller('myCtrl', function($scope, $http) {
 ![booksweb](images/booksweb.png)
 
     - Also noticed entries reflecting in the backend whenever entries were made.
-    ![bookscmd](bookscmd.png)
+    ![bookscmd](images/bookscmd.png)
 
 **MEAN Stack Successfully Deployed!**
 ---
